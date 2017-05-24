@@ -106,3 +106,6 @@ ENV/
 
 # Weird MacOS files
 ._*
+
+# Weird unix files
+.nfs*
