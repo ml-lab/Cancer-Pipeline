@@ -4,7 +4,7 @@ def with_conda_environment(packages):
 
         def wrapper(*args, **kwargs):
 
-            options, original_spec = template(*args, **kwargs)
+            inputs, outputs, options, original_spec = template(*args, **kwargs)
 
             conda_spec = f'''
 
@@ -19,7 +19,7 @@ def with_conda_environment(packages):
 
             '''
 
-            return options, conda_spec
+            return inputs, outputs, options, conda_spec
 
         return wrapper
 
