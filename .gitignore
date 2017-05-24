@@ -102,6 +102,7 @@ ENV/
 
 # gwf
 .gwf/
+.gwfconf.json
 
 # Weird MacOS files
 ._*
