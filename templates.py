@@ -11,7 +11,7 @@ def trim_paired_end_fastq(r1_file, r2_file, trimmed_r1_file, trimmed_r2_file, r1
 
     options = {
 
-        'cores': 1,
+        'cores': 2,
         'memory': '4g',
         'walltime': '04:00:00'
 
