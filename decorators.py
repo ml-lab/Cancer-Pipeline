@@ -6,7 +6,7 @@ def with_conda_environment(packages):
 
     The wrapper first creates and activates a temporary conda enviroment with
     the packages specfied in the `packages` list. It then runs the original
-    spec and finally deactivates and deletes the temporary enviroment.
+    spec, and finally it deactivates and deletes the temporary environment.
     """
 
     def conda_decorator(template):
