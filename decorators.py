@@ -1,4 +1,13 @@
 def with_conda_environment(packages):
+    """Wraps gwf spec with a conda enviroment.
+
+    This decorator assumes that gwf is run on a SLURM backend, and that a
+    temporary folder /scratch/$SLURM_JOBID is available for the process.
+
+    The wrapper first creates and activates a temporary conda enviroment with
+    the packages specfied in the `packages` list. It then runs the original
+    spec and finally deactivates and deletes the temporary enviroment.
+    """
 
     def conda_decorator(template):
 
